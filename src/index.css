@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "winkle";
+  src: url("./assets/font/Winkle-Regular.woff");
+  src: url("./assets/font/Winkle-Regular.woff") format("woff"),
+    url("./assets/font/Winkle-Regular.woff") format("woff");
+}
+
+body {
+  font-family: "winkle", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
