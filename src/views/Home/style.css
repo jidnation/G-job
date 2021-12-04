@@ -86,7 +86,7 @@ div.first {
 .first > h3 {
   color: #ff9a00;
   font-size: 39px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   font-weight: 800;
 }
 
@@ -129,7 +129,7 @@ div.first {
 footer {
   display: flex;
   position: absolute;
-  top: 820px;
+  top: 52rem;
   width: 100%;
   justify-content: space-between;
   padding: 10px 15px;
@@ -220,8 +220,8 @@ div.first {
 
 
 footer {
-  top: 860px;
-  padding: 10px 40px;
+  top: 55rem;
+  padding: 0 40px 15px;
 }
 
 }
@@ -231,9 +231,9 @@ footer {
      @media(min-width: 768px){
 
       div.second {
-          height: 25rem;
-          width: 570px;
-    right: -30px;
+          height: 26rem;
+          width: 550px;
+    right: -45px;
           border-top-left-radius: 200px;
           border-bottom-left-radius: 200px;
       }
@@ -252,9 +252,10 @@ footer {
     }
     
     .first > img {
+      top: 5%;
       left: 72.5%;
-      width: 130px;
-      height: 130px;
+      width: 100px;
+      height: 100px;
     }
     
     .first > h1 {
@@ -283,9 +284,9 @@ footer {
     
     
     footer {
-      top: 1050px;
+      top: 67rem;
       width: 100%;
-      padding: 10px 60px;
+      padding: 0 70px 15px;
     }
     
     }
@@ -334,10 +335,10 @@ footer {
   }
   
   .first > img {
-    top: 13%;
-    left: 75%;
-    width: 90px;
-    height: 90px;
+    top: 5%;
+    left: 80%;
+    width: 80px;
+    height: 80px;
   }
   
   .first > h1 {
@@ -367,7 +368,7 @@ footer {
   footer {
     display: flex;
     position: absolute;
-    top: 690px;
+    top: 41rem;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
@@ -380,8 +381,9 @@ footer {
   /* display: none; */
 }
   .first > img {
-    width: 165px;
-    height: 165px;
+    top: 7%;
+    width: 110px;
+    height: 110px;
   }
   
   .first > h1 {
@@ -392,4 +394,14 @@ footer {
   .first > h3 {
     font-size: 105px;
   }
+
+  footer {
+    top: 45.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 100px;
+  }
+
+
 }

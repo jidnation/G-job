@@ -198,3 +198,255 @@ import Lilypad from '../../assets/lilypad.png' */
 //  margin:0 2.5rem;
 // }
 // ` */
+
+
+
+////////////styles
+.container {
+  display: flex;
+  height: 100vh;
+  background: linear-gradient(rgba(24, 97, 110, 0.8), rgba(24, 97, 110, 0.8)),
+    url("../../assets/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+div.first {
+  flex: 1.2;
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  padding: 120px;
+}
+
+.first > img {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  right: 30%;
+  transform: matrix(-0.71, -0.71, 0.71, -0.71, 0, 0);
+}
+
+.first > h1 {
+  font-weight: normal;
+  display: block;
+  color: black;
+  font-size: 70px;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  margin-top: 35px;
+}
+.first > h3 {
+  color: #ff9a00;
+  font-size: 130px;
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+.first > h3 > span {
+  color: #559400;
+  font-weight: bold;
+}
+
+.first > p {
+  margin-right: 1rem;
+  line-height: 2.6rem;
+  font-size: 1.5rem;
+  color: white;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-family: "winkle";
+}
+
+div.second {
+  top: 0px;
+  flex: 1;
+  right: -200px;
+  position: relative;
+  height: 50rem;
+  transform: matrix(0.87, -0.7, 0.7, 0.87, 0, 0);
+  background: transparent linear-gradient(189deg, #ff9a00 0%, #559400 100%) 0%
+    0% no-repeat padding-box;
+  border: 15px solid #080808;
+  border-top-left-radius: 100rem;
+  border-bottom-left-radius: 100rem;
+}
+.second > .gifBack {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 8%;
+  top: 8%;
+  width: 40rem;
+  height: 40rem;
+  border-radius: 30rem;
+  background-color: white;
+}
+.gifBack > .gifImage {
+  position: inherit;
+  width: 38rem;
+  height: 38rem;
+  border-radius: 50rem;
+  background-image: url("../../assets/frog.gif.gif");
+  border-width: 200px;
+  background-size: cover;
+  transform: rotate(40deg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 2465px) {
+  div.first {
+    padding: 30px 0 0 70px;
+  }
+
+  .first > img {
+    top: 28px;
+    right: 18%;
+  }
+
+  .first > h1 {
+    font-size: 64px;
+  }
+  .first > h3 {
+    font-size: 126px;
+  }
+
+  .first > p {
+    margin-right: 6rem;
+    line-height: 3.6rem;
+    font-size: 1.4rem;
+  }
+
+  div.second {
+    right: -240px;
+    height: 48rem;
+  }
+  .second > .gifBack {
+    top: 12.5%;
+    width: 34rem;
+    height: 34rem;
+    border-radius: 30rem;
+  }
+  .gifBack > .gifImage {
+    width: 32rem;
+    height: 32rem;
+  }
+}
+@media (max-width: 2000px) {
+  .container {
+    position: relative;
+    flex-direction: column;
+    /*position: relative; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  div.first {
+    flex: 2;
+    padding: 0 10%;
+    margin: 10% auto 0;
+    justify-content: center;
+    align-items: center;
+    top: 60%;
+  }
+
+  .first > img {
+    top: 27.4%;
+    right: 24%;
+    width: 130px;
+    height: 130px;
+  }
+
+  .first > h1 {
+    font-size: 55px;
+  }
+  .first > h3 {
+    font-size: 130px;
+  }
+
+  .first > p {
+    margin-right: 0;
+    padding: 0 50px;
+    line-height: 3rem;
+  }
+
+  div.second {
+    position: absolute;
+    height: 52rem;
+    right: -160px;
+    width: 70%;
+  }
+  .second > .gifBack {
+    top: 15%;
+    left: 8%;
+    width: 36rem;
+    height: 36rem;
+    border-radius: 30rem;
+  }
+  .gifBack > .gifImage {
+    width: 34rem;
+    height: 34rem;
+  }
+}
+/* @media (max-width: 1487px) {
+  div.second {
+    height: 45rem;
+    right: -160px;
+    width: 100%;
+  }
+  .second > .gifBack {
+    top: 9%;
+    left: 7%;
+    width: 36rem;
+  }
+
+  .first > img {
+    top: 21.4%;
+    right: 13%;
+  }
+
+  .first > h1 {
+    font-size: 53px;
+  }
+  .first > h3 {
+    font-size: 120px;
+  }
+} */
+
+@media (max-width: 1000px) {
+  div.second {
+    height: 35rem;
+    right: -130px;
+    width: 100%;
+  }
+  .second > .gifBack {
+    top: 8%;
+    width: 27rem;
+    height: 27rem;
+  }
+  .gifBack > .gifImage {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  div.first {
+    top: 45%;
+  }
+
+  .first > img {
+    top: 20%;
+    right: 15%;
+    width: 80px;
+    height: 80px;
+  }
+
+  .first > h1 {
+    font-size: 43px;
+  }
+  .first > h3 {
+    font-size: 90px;
+  }
+} 
