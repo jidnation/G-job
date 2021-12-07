@@ -123,12 +123,14 @@ const Home = () => {
   }, [checkIfWalletIsConnected]);
 
   return (
-    <div className= 'container'>
+    <div className="container">
       <div className="container1">
         <div className="first">
-          <img src={lily} />
+          <div className= 'contain'>
+            <img src={lily} />
 
-          <h1> Welcome to Chill Frogs</h1>
+            <h1> Welcome to Chill Frogs</h1>
+          </div>
 
           <h3>
             <span>Frozen</span> Hands
@@ -145,31 +147,35 @@ const Home = () => {
             repudiandae voluptates aliquam deleniti, molestias totam
             repellendus!{" "}
           </p>
-          <div className = "buttonCont">
-     {currentAccount === "" ?  <button onClick={connectWallet} className ="button" > Connect Wallet </button>
-          : ''} </div>
+          <div className="buttonCont">
+            {currentAccount === "" ? (
+              <button onClick={connectWallet} className="button">
+                {" "}
+                Connect Wallet{" "}
+              </button>
+            ) : (
+              ""
+            )}{" "}
+          </div>
         </div>
-          <footer>
-      <div>
-   <img src = {TW} alt = 'twitter' />
-   </div>
-   <div>
-   <img src = {DS} alt = 'discord' />
-   </div>
-   <div>
-   <img src = {FB} alt = 'facebook' />
-   </div>
-      </footer>
+        <footer>
+          <div>
+            <img src={TW} alt="twitter" />
+          </div>
+          <div>
+            <img src={DS} alt="discord" />
+          </div>
+          <div>
+            <img src={FB} alt="facebook" />
+          </div>
+        </footer>
         <div className="second">
           <div className="gifBack">
             <div className="gifImage"></div>
           </div>
         </div>
       </div>
-     
-      
-     
-      </div>
+    </div>
   );
 };
 
