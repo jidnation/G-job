@@ -78,6 +78,7 @@ div.first {
   transform: matrix(-0.71, -0.71, 0.71, -0.71, 0, 0);
   left: 13.4rem;
   width: 45px;
+  top: 1%;
   /* display: none; */
   height: 45px;
 }
@@ -134,7 +135,7 @@ div.first {
 footer {
   display: flex;
   position: absolute;
-  top: 52rem;
+  top: 155vh;
   width: 100%;
   justify-content: space-between;
   padding: 10px 15px;
@@ -154,11 +155,14 @@ footer > div > img {
 
 }
 
-@media(min-width:375px){
+@media(min-width:374px){
 
-  .first > img {
+  .contain > img {
     width: 60px;
     height: 60px;
+    top: ;
+  left: 17rem;
+
   }
 
   .contain > h1 {
@@ -373,7 +377,7 @@ footer {
   footer {
     display: flex;
     position: absolute;
-    top: 41rem;
+    top: 117vh;
     width: 100%;
     align-items: center;
     justify-content: space-evenly;
@@ -400,7 +404,7 @@ footer {
 
   footer {
     top: 45.5rem;
-    width: 100%;
+    width: 117vh;
     align-items: center;
     justify-content: space-evenly;
     padding: 0 100px;

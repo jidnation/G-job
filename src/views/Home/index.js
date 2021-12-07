@@ -127,9 +127,8 @@ const Home = () => {
       <div className="container1">
         <div className="first">
           <div className= 'contain'>
-            <img src={lily} />
-
             <h1> Welcome to Chill Frogs</h1>
+            <img src={lily} />
           </div>
 
           <h3>
